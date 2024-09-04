@@ -194,7 +194,7 @@ export default buildConfig({
           prefix: 'media',
         },
       },
-      bucket: process.env.S3_BUCKET,
+      bucket: process.env.S3_BUCKET as string,
       config: {
         credentials: {
           accessKeyId: process.env.S3_ACCESS_KEY_ID,
