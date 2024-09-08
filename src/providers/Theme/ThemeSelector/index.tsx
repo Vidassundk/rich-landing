@@ -14,11 +14,13 @@ import type { Theme } from './types'
 import { useTheme } from '..'
 import { themeLocalStorageKey } from './types'
 
+const DEFAULT_THEME: Theme = 'light'
+
 export const ThemeSelector: React.FC = () => {
   const { setTheme } = useTheme()
   const [value, setValue] = useState('')
 
-  const onThemeChange = (themeToSet: Theme & 'auto') => {
+  const onThemeChange = (themeToSet: Theme | 'auto') => {
     if (themeToSet === 'auto') {
       setTheme(null)
       setValue('auto')
@@ -29,8 +31,9 @@ export const ThemeSelector: React.FC = () => {
   }
 
   React.useEffect(() => {
-    const preference = window.localStorage.getItem(themeLocalStorageKey)
-    setValue(preference ?? 'auto')
+    const preference = window.localStorage.getItem(themeLocalStorageKey) as Theme | null
+    const startingTheme = preference ?? DEFAULT_THEME
+    onThemeChange(startingTheme)
   }, [])
 
   return (
