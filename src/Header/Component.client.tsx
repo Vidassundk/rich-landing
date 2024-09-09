@@ -14,11 +14,8 @@ interface HeaderClientProps {
 }
 
 export const HeaderClient: React.FC<HeaderClientProps> = ({ header }) => {
-
   return (
-    <header
-      className="container relative z-20 py-8 flex justify-between"
-    >
+    <header className="container relative z-20 py-8 h-[144px] flex justify-between">
       <Link href="/">
         <Logo />
       </Link>
