@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "teamid.com.kaercher.consumer.devicesapp.stage"
+        ],
+        "components": [
+          {
+            "/": "*",
+            "comment": "Matches all paths for Universal Links."
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "teamid.com.kaercher.consumer.devicesapp.stage"
+    ]
+  }
+}
