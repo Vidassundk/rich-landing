@@ -3,7 +3,9 @@
     "details": [
       {
         "appIDs": [
-          "teamid.com.kaercher.consumer.devicesapp.stage"
+          "XB75RSR57F.com.kaercher.consumer.devicesapp.stage",
+          "XB75RSR57F.com.kaercher.consumer.devicesapp.store",
+          "XB75RSR57F.com.kaercher.consumer.devicesapp"
         ],
         "components": [
           {
@@ -16,7 +18,9 @@
   },
   "webcredentials": {
     "apps": [
-      "teamid.com.kaercher.consumer.devicesapp.stage"
+      "XB75RSR57F.com.kaercher.consumer.devicesapp.stage",
+      "XB75RSR57F.com.kaercher.consumer.devicesapp.store",
+      "XB75RSR57F.com.kaercher.consumer.devicesapp"
     ]
   }
 }
